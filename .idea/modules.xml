@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java12-practice/java12-practice.iml" filepath="$PROJECT_DIR$/java12-practice/java12-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/java13-practice/java13-practice.iml" filepath="$PROJECT_DIR$/java13-practice/java13-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/java14-practice/java14-practice.iml" filepath="$PROJECT_DIR$/java14-practice/java14-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/java9-practice/java9-practice.iml" filepath="$PROJECT_DIR$/java9-practice/java9-practice.iml" />

@@ -3,7 +3,7 @@ plugins {
 }
 
 version = '1.0'
-group = 'com.bmuschko'
+group = 'com.java12'
 sourceCompatibility = JavaVersion.VERSION_12
 targetCompatibility = JavaVersion.VERSION_12
 

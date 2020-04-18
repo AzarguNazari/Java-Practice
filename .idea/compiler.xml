@@ -9,6 +9,7 @@
         <module name="java10-examples" />
         <module name="java9-practice" />
         <module name="java11-practice" />
+        <module name="java12-practice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
