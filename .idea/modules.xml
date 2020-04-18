@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java10-examples/java10-examples.iml" filepath="$PROJECT_DIR$/java10-examples/java10-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java11-practice/java11-practice.iml" filepath="$PROJECT_DIR$/java11-practice/java11-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java12-practice/java12-practice.iml" filepath="$PROJECT_DIR$/java12-practice/java12-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java13-practice/java13-practice.iml" filepath="$PROJECT_DIR$/java13-practice/java13-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java14-practice/java14-practice.iml" filepath="$PROJECT_DIR$/java14-practice/java14-practice.iml" />
     </modules>
   </component>
 </project>
