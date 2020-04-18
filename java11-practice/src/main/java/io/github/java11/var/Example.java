@@ -1,4 +1,4 @@
-package io.github.biezhi.java11.var;
+package io.github.java11.var;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,12 +7,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 感受 JEP 286 的魔法世界
- *
- * @author biezhi
- * @date 2018/7/10
- */
 public class Example {
 
     public static void main(String[] args) throws Exception {
@@ -27,7 +21,7 @@ public class Example {
         var path  = Paths.get(fileName);
         var bytes = Files.readAllBytes(path);
 
-        System.out.println("字节数组: " + bytes);
+        System.out.println("bytes: " + bytes);
 
         for (var b : bytes) {
             // TODO

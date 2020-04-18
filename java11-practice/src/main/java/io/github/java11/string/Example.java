@@ -1,4 +1,4 @@
-package io.github.biezhi.java11.string;
+package io.github.java11.string;
 
 import java.util.stream.Collectors;
 
@@ -80,16 +80,16 @@ public class Example {
         writeHeader("String.isBlank()");
 
         String emptyString = "";
-        System.out.println("空字符串    -> " + emptyString.isBlank());
+        System.out.println("is empty    -> " + emptyString.isBlank());
 
         String onlyLineSeparator = System.getProperty("line.separator");
-        System.out.println("换行符     -> " + onlyLineSeparator.isBlank());
+        System.out.println("isblank     -> " + onlyLineSeparator.isBlank());
 
         String tabOnly = "\t";
-        System.out.println("Tab 制表符 -> " + tabOnly.isBlank());
+        System.out.println("Tab is table -> " + tabOnly.isBlank());
 
         String spacesOnly = "   ";
-        System.out.println("空格       -> " + spacesOnly.isBlank());
+        System.out.println("isblank       -> " + spacesOnly.isBlank());
     }
 
 

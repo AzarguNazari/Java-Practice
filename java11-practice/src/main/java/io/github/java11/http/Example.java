@@ -1,4 +1,4 @@
-package io.github.biezhi.java11.http;
+package io.github.java11.http;
 
 import com.google.gson.Gson;
 
@@ -14,18 +14,8 @@ import java.util.concurrent.CompletableFuture;
 
 import static java.util.stream.Collectors.toList;
 
-/**
- * Java 11 的 Http Client 示例
- * <p>
- * 移除了 HttpResponse.BodyHandler.asString()
- * 使用 HttpResponse.BodyHandlers.ofString() 代替功能
- *
- * @author biezhi
- * @date 2018/7/10
- */
 public class Example {
 
-    // 同步调用 GET
     public static void syncGet(String uri) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -39,7 +29,6 @@ public class Example {
         System.out.println(response.body());
     }
 
-    // 异步调用 GET
     public static void asyncGet(String uri) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -57,14 +46,13 @@ public class Example {
         }).join();
     }
 
-    // 异步调用 POST
     public static void asyncPost() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
 
         Gson gson = new Gson();
         Foo  foo  = new Foo();
-        foo.name = "王爵nice";
-        foo.url = "https://github.com/biezhi";
+        foo.name = "nice name";
+        foo.url = "https://github.com/AzarguNazari";
 
         String jsonBody = gson.toJson(foo);
 
@@ -84,7 +72,6 @@ public class Example {
                 }).join();
     }
 
-    // 下载文件
     public static void downloadFile() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
 
@@ -99,7 +86,6 @@ public class Example {
         System.out.println(response.body());
     }
 
-    // 上传文件
     public static void uploadFile() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
 
@@ -113,7 +99,6 @@ public class Example {
         System.out.println(response.statusCode());
     }
 
-    // 设置代理
     public static void proxy() throws Exception {
         HttpClient client = HttpClient.newBuilder()
                 .proxy(ProxySelector.of(new InetSocketAddress("127.0.0.1", 1080)))
@@ -129,7 +114,6 @@ public class Example {
         System.out.println(response.body());
     }
 
-    // basic 认证
     public static void basicAuth() throws Exception {
         HttpClient client = HttpClient.newBuilder()
                 .authenticator(new Authenticator() {
@@ -150,7 +134,6 @@ public class Example {
         System.out.println(response.body());
     }
 
-    // 访问 HTTP2 网址
     public static void http2() throws Exception {
         HttpClient.newBuilder()
                 .followRedirects(HttpClient.Redirect.NORMAL)
@@ -171,7 +154,6 @@ public class Example {
                 }).join();
     }
 
-    // 并行请求
     public void getURIs(List<URI> uris) {
         HttpClient client = HttpClient.newHttpClient();
         List<HttpRequest> requests = uris.stream()
