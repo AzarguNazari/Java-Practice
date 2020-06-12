@@ -25,17 +25,14 @@ public class StringEnhancementTest {
 
     @Test
     void canTransformString() {
-        List<String> urls = List.of(
-                "   http://google.com/",
-                "http://my.search.com?query=java server&page=1");
+        List<String> urls = List.of("   http://google.com/", "http://my.search.com?query=java server&page=1");
         List<String> transformedUrls = new ArrayList<>();
         for (String url : urls) {
             String transformedUrl = url.transform(String::strip)
-                    .transform(URLCleaner::encodeQueryParams);
+                                       .transform(URLCleaner::encodeQueryParams);
             transformedUrls.add(transformedUrl);
         }
-        assertEquals(List.of("http://google.com/",
-                "http://my.search.com?query%3Djava+server%26page%3D1"), transformedUrls);
+        assertEquals(List.of("http://google.com/", "http://my.search.com?query%3Djava+server%26page%3D1"), transformedUrls);
     }
 
     private static class URLCleaner {

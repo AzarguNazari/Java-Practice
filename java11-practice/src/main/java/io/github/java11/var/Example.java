@@ -10,8 +10,8 @@ import java.util.List;
 public class Example {
 
     public static void main(String[] args) throws Exception {
-        var list   = new ArrayList<String>();   // 自动推断 ArrayList<String>
-        var stream = list.stream();             // 自动推断 Stream<String>
+        var list   = new ArrayList<String>();
+        var stream = list.stream();
 
         var newList = List.of("hello", "biezhi");
         newList.forEach(System.out::println);

@@ -8,7 +8,6 @@
     <description>A test-driven approach to demonstrating new features and APIs in Java 12.</description>
 
     <properties>
-        <jdk.version>12</jdk.version>
         <junit.jupiter.version>5.4.1</junit.jupiter.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
