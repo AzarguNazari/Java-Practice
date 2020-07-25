@@ -27,7 +27,7 @@ apply plugin: 'java'
 // Standard project properties. These are used as default values by some assembly and release task, e.g. jar
 
 project.description = 'Java 10 code examples'
-project.group = 'com.neiljbrown.examples'
+project.group = 'com.examples'
 //project.name - Defined in settings.gradle to override the default used by Gradle which is based on project dir name
 //project.version - Defined in gradle.properties to allow it to be overridden
 

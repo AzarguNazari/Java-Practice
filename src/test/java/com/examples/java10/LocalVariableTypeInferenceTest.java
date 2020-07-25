@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package test.java.com.neiljbrown.examples.java10;
+package com.examples.java10;
 
 import org.junit.jupiter.api.Test;
 
