@@ -1,6 +1,7 @@
-package io.github.java11.http;
+package com.examples.java11.http;
 
 import com.google.gson.Gson;
+import org.junit.Test;
 
 import java.net.*;
 import java.net.http.HttpClient;
@@ -16,7 +17,8 @@ import static java.util.stream.Collectors.toList;
 
 public class Example {
 
-    public static void syncGet(String uri) throws Exception {
+    @Test
+    public void syncGet(String uri) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(uri))
@@ -29,7 +31,8 @@ public class Example {
         System.out.println(response.body());
     }
 
-    public static void asyncGet(String uri) throws Exception {
+    @Test
+    public void asyncGet(String uri) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(uri))
@@ -46,7 +49,8 @@ public class Example {
         }).join();
     }
 
-    public static void asyncPost() throws Exception {
+    @Test
+    public void asyncPost() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
 
         Gson gson = new Gson();
@@ -72,7 +76,8 @@ public class Example {
                 }).join();
     }
 
-    public static void downloadFile() throws Exception {
+    @Test
+    public void downloadFile() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
@@ -86,7 +91,8 @@ public class Example {
         System.out.println(response.body());
     }
 
-    public static void uploadFile() throws Exception {
+    @Test
+    public void uploadFile() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
 
 
@@ -99,7 +105,8 @@ public class Example {
         System.out.println(response.statusCode());
     }
 
-    public static void proxy() throws Exception {
+    @Test
+    public void proxy() throws Exception {
         HttpClient client = HttpClient.newBuilder()
                 .proxy(ProxySelector.of(new InetSocketAddress("127.0.0.1", 1080)))
                 .build();
@@ -114,7 +121,8 @@ public class Example {
         System.out.println(response.body());
     }
 
-    public static void basicAuth() throws Exception {
+    @Test
+    public void basicAuth() throws Exception {
         HttpClient client = HttpClient.newBuilder()
                 .authenticator(new Authenticator() {
                     @Override
@@ -134,7 +142,8 @@ public class Example {
         System.out.println(response.body());
     }
 
-    public static void http2() throws Exception {
+    @Test
+    public void http2() throws Exception {
         HttpClient.newBuilder()
                 .followRedirects(HttpClient.Redirect.NORMAL)
                 .version(HttpClient.Version.HTTP_2)
@@ -154,6 +163,7 @@ public class Example {
                 }).join();
     }
 
+    @Test
     public void getURIs(List<URI> uris) {
         HttpClient client = HttpClient.newHttpClient();
         List<HttpRequest> requests = uris.stream()
@@ -166,12 +176,4 @@ public class Example {
                 .toArray(CompletableFuture<?>[]::new))
                 .join();
     }
-
-    public static void main(String[] args) throws Exception {
-//        syncGet("https://biezhi.me");
-//        asyncGet("https://biezhi.me");
-        asyncPost();
-//        http2();
-    }
-
 }

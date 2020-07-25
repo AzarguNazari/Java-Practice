@@ -1,4 +1,4 @@
-package io.github.java11.files;
+package com.examples.java11.files;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;

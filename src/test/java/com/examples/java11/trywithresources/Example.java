@@ -1,4 +1,4 @@
-package io.github.java11.trywithresources;
+package com.examples.java11.trywithresources;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

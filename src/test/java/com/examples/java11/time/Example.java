@@ -1,4 +1,4 @@
-package io.github.java11.time;
+package com.examples.java11.time;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;

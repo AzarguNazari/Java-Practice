@@ -1,4 +1,4 @@
-package io.github.java11.var;
+package com.examples.java11.var;
 
 import java.io.File;
 import java.io.FileInputStream;

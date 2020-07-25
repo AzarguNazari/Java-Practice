@@ -1,4 +1,4 @@
-package io.github.java11.interfaces;
+package com.examples.java11.interfaces;
 
 public interface Example {
 

@@ -1,4 +1,4 @@
-package io.github.java11.processor;
+package com.examples.java11.processor;
 
 public class Example {
 

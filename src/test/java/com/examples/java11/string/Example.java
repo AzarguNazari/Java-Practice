@@ -1,4 +1,4 @@
-package io.github.java11.string;
+package com.examples.java11.string;
 
 import java.util.stream.Collectors;
 

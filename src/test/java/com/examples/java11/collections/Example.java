@@ -1,4 +1,4 @@
-package io.github.java11.collections;
+package com.examples.java11.collections;
 
 import java.util.List;
 import java.util.Map;
