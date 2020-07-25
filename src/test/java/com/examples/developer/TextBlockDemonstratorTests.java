@@ -1,4 +1,4 @@
-package com.ibm.developer;
+package com.examples.developer;
 
 import static org.junit.jupiter.api.Assertions.fail;
 

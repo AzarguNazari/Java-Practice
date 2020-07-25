@@ -45,7 +45,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.ibm.developer.PreviewJavaFeatures</mainClass>
+							<mainClass>com.examples.developer.PreviewJavaFeatures</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

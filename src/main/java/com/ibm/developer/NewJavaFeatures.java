@@ -1,4 +1,4 @@
-package com.ibm.developer;
+package com.examples.developer;
 
 public class NewJavaFeatures {
 
