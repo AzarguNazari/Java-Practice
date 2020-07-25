@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.fma;
+package com.examples.java14.fma;
 
 import java.io.IOException;
 import java.lang.invoke.VarHandle;

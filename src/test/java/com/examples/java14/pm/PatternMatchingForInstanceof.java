@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.pm;
+package com.examples.java14.pm;
 
 /**
  * The <b>pattern matching for <i>instanceof</i></b>

@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.npe;
+package com.examples.java14.npe;
 
 import java.util.ArrayList;
 

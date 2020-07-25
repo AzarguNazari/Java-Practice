@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.records;
+package com.examples.java14.records;
 
 /**
  * 

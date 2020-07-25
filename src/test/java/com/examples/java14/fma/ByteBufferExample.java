@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.fma;
+package com.examples.java14.fma;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

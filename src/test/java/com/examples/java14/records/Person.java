@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.records;
+package com.examples.java14.records;
 
 /**
  * A simple person (we can get his/her first name, last name and age).

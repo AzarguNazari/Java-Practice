@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.se;
+package com.examples.java14.se;
 
 import java.util.Date;
 

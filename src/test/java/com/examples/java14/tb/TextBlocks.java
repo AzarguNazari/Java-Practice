@@ -1,4 +1,4 @@
-package com.github.kbnt.java14.tb;
+package com.examples.java14.tb;
 
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
