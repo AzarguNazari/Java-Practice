@@ -1,4 +1,4 @@
-package com.bmuschko.java12.library;
+package com.examples.java12.library;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
