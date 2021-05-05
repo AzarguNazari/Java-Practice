@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java12-practice" />
-        <module name="java10-examples" />
-        <module name="java11-practice" />
         <module name="java9-practice" />
+        <module name="java12-practice" />
+        <module name="java11-practice" />
+        <module name="javalin-examples" />
+        <module name="java10-examples" />
+        <module name="Java-Practice" />
       </profile>
     </annotationProcessing>
   </component>
