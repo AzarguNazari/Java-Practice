@@ -1,4 +1,4 @@
-package string;
+package com.example.string;
 
 public class StringExample {
 
